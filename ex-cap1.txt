@@ -1,0 +1,97 @@
+1. How would you define Machine Learning?
+Machine Learning is the science (and art) of programming computers so they can learn from data.
+
+2. Can you name four types of problems where it shines?
+- Problems for which existing solutions require a lot of hand-tuning or long lists of rules: one Machine Learning algorithm can often simplify code and perform better.
+- Complex problems for which there is no good solution at all using a traditional approach: the best Machine Learning techniques can find a solution.
+- Fluctuating environments: a Machine Learning system can adapt to new data.
+- Getting insights about complex problems and large amounts of data.
+
+3. What is a labeled training set?
+The training data you feed to the algorithm includes the desired solutions, called labels
+
+4. What are the two most common supervised tasks?
+- Classification
+- Regression
+
+5. Can you name four common unsupervised tasks?
+- Clustering 
+- Anomaly detection
+- Visualization and dimensionality reduction
+- Association rule learning
+
+6. What type of Machine Learning algorithm would you use to allow a robot to
+walk in various unknown terrains?
+Reinforcement Learning
+
+7. What type of algorithm would you use to segment your customers into multiple
+groups?
+Unsupervised learning
+
+8. Would you frame the problem of spam detection as a supervised learning problem
+or an unsupervised learning problem?
+supervised learning
+
+9. What is an online learning system?
+In online learning, you train the system incrementally by feeding it data instances sequentially, either individually or by small groups called mini-batches.
+
+10. What is out-of-core learning?
+Out-of-core algorithms can handle vast quantities of data that cannot fit in a
+computer’s main memory
+
+11. What type of learning algorithm relies on a similarity measure to make predictions?
+Model-based learning
+Instance-based learning
+
+12. What is the difference between a model parameter and a learning algorithmâ€™s
+hyperparameter?
+A hyperparameter is a parameter of a learning algorithm (not of the
+model). As such, it is not affected by the learning algorithm itself; it must be set prior
+to training and remains constant during training.
+
+13. What do model-based learning algorithms search for? What is the most common
+strategy they use to succeed? How do they make predictions?
+- You studied the data.
+- You selected a model.
+- You trained it on the training data
+- Finally, you applied the model to make predictions on new cases (this is called
+inference), hoping that this model will generalize well.
+
+14. Can you name four of the main challenges in Machine Learning?
+- Insufficient Quantity of Training Data
+- Nonrepresentative Training Data
+- Poor-Quality Data
+- Irrelevant Features
+- Overfitting the Training Data
+- Underfitting the Training Data
+
+15. If your model performs great on the training data but generalizes poorly to new
+instances, what is happening? Can you name three possible solutions?
+If the training error is low (i.e., your model makes few mistakes on the training set)
+but the generalization error is high, it means that your model is overfitting the training
+data.
+
+16. What is a test set and why would you want to use it?
+A better option is to split your data into two sets: the training set and the test set. As
+these names imply, you train your model using the training set, and you test it using
+the test set. The error rate on new cases is called the generalization error (or out-ofsample
+error), and by evaluating your model on the test set, you get an estimate of this
+error. This value tells you how well your model will perform on instances it has never
+seen before.
+
+17. What is the purpose of a validation set?
+The problem is that you measured the generalization error multiple times on the test
+set, and you adapted the model and hyperparameters to produce the best model for
+that particular set. This means that the model is unlikely to perform as well on new
+data.
+A common solution to this problem is called holdout validation: you simply hold out
+part of the training set to evaluate several candidate models and select the best one.
+The new heldout set is called the validation set (or sometimes the development set, or
+dev set).
+
+18. What can go wrong if you tune hyperparameters using the test set?
+the risk overfitting the test set,and the generalization error you measure will be optimistic
+
+19. What is repeated cross-validation and why would you prefer it to using a single
+validation set?
+Cross-validation is a technique that makes it possible to compare model
