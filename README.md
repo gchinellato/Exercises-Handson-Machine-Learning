@@ -3,4 +3,4 @@ Exercises for "Hands-on Machine Learning with Scikit-Learn, Keras and TensorFlow
 
 Based on [ageron/handson-ml](https://github.com/ageron/handson-ml2).
 
-![Screenshot](book_cover.png)
+![Screenshot](book-cover.png)
